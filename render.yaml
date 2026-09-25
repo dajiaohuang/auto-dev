@@ -21,6 +21,10 @@ services:
       paths:
         - mpp-server/**
         - mpp-core/**
+        - mpp-codegraph/**
+        - mpp-ui/build.gradle.kts
+        - gradle/**
+        - gradlew
         - build.gradle.kts
         - settings.gradle.kts
         - gradle.properties

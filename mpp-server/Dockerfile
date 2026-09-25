@@ -22,12 +22,12 @@ RUN ./gradlew :mpp-server:dependencies --no-daemon
 
 # Copy source code
 COPY mpp-core/src ./mpp-core/src
+COPY mpp-codegraph/src ./mpp-codegraph/src
 COPY mpp-server/src ./mpp-server/src
 
 # Copy other necessary files
 COPY mpp-core/AutoDevCore.podspec ./mpp-core/
 COPY mpp-core/webpack.config.d ./mpp-core/webpack.config.d
-COPY mpp-server/webpack.config.d ./mpp-server/webpack.config.d
 
 # Build fat JAR
 RUN ./gradlew :mpp-server:fatJar --no-daemon
