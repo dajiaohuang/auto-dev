@@ -16,6 +16,11 @@ COPY mpp-core/build.gradle.kts ./mpp-core/
 COPY mpp-ui/build.gradle.kts ./mpp-ui/
 COPY mpp-server/build.gradle.kts ./mpp-server/
 COPY mpp-codegraph/build.gradle.kts ./mpp-codegraph/
+COPY mpp-viewer/build.gradle.kts ./mpp-viewer/
+COPY mpp-viewer-web/build.gradle.kts ./mpp-viewer-web/
+COPY xiuper-ui/build.gradle.kts ./xiuper-ui/
+COPY xiuper-fs/build.gradle.kts ./xiuper-fs/
+COPY xiuper-e2e/build.gradle.kts ./xiuper-e2e/
 
 # Download dependencies (cached layer)
 RUN sed -i 's/\r$//' ./gradlew && ./gradlew :mpp-server:dependencies --no-daemon
