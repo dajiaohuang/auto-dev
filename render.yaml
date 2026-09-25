@@ -22,15 +22,9 @@ services:
         - mpp-server/**
         - mpp-core/**
         - mpp-codegraph/**
-        - mpp-viewer/build.gradle.kts
-        - mpp-viewer-web/build.gradle.kts
-        - xiuper-ui/build.gradle.kts
-        - xiuper-fs/build.gradle.kts
-        - xiuper-e2e/build.gradle.kts
-        - mpp-ui/build.gradle.kts
         - gradle/**
         - gradlew
         - build.gradle.kts
-        - settings.gradle.kts
+        - settings.docker.gradle.kts
         - gradle.properties
 
