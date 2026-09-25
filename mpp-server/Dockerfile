@@ -18,7 +18,7 @@ COPY mpp-server/build.gradle.kts ./mpp-server/
 COPY mpp-codegraph/build.gradle.kts ./mpp-codegraph/
 
 # Download dependencies (cached layer)
-RUN ./gradlew :mpp-server:dependencies --no-daemon
+RUN sed -i 's/\r$//' ./gradlew && ./gradlew :mpp-server:dependencies --no-daemon
 
 # Copy source code
 COPY mpp-core/src ./mpp-core/src
